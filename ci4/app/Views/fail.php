@@ -11,34 +11,27 @@
                     <h6>Lembar Penilaian Kinerja Unit Penyelenggara Pelayanan Publik (UPP)</h6>
                 </div>
                 <div class="steps-content">
-                    <h6>Pilih Layanan</h6>
+                    <h6>Fail</h6>
                 </div>
                 
             </div>
             <div class="right-side">
-                <?= form_open('/home/save1st', ['class' => 'formtambah']) ?>
-                <?= csrf_field(); ?>
                 <div class="main active">
-                    <div class="text text-center">
-                        <h6>Lembar Penilaian Kinerja Unit Penyelenggara Pelayanan Publik (UPP) <br> Kabupaten Jombang</h6>
-                        <hr>
-                        <h6>Pilih Layanan</a>
+                    
+                    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                         <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                     
+                    <div class="text congrats">
+                        <h2>Gagal!</h2>
+                        <h6>Penilaian untuk <?= $layanan ?> disimpan karena terdapat pertanyaan yang belum terjawab.</h6>
                     </div>
-                    <div class="input-text">
-                        <div class="input-div">
-                            <select class="form-select" id="survey_layanan" required>
-                                <option Disabled=true Selected=true>PILIH...</option>
-                                <option value="1">Dinas 1</option>
-                                <option value="2">Dinas 2</option>
-                            </select>
-                            <div class="invalid-feedback error_survey_layanan">
-                        </div>
+                    <div class="text-center">
+                        <a class="btn btn-primary" href="<?= base_url() ?> ">Kembali</a>
                     </div>
-                    <div class="buttons">
-                        <button type="submit" class="btnsimpan"> Submit</button>
-                    </div>
+                    
                 </div>
-                <?= form_close() ?>
             </div>
         </div>
     </div>

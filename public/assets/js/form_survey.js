@@ -12,7 +12,7 @@ next_click.forEach(function(next_click_form){
        formnumber++;
        updateform();
        progress_forward();
-       contentchange();
+    //    contentchange();
     });
 }); 
 
@@ -22,7 +22,7 @@ back_click.forEach(function(back_click_form){
        formnumber--;
        updateform();
        progress_backward();
-       contentchange();
+    //    contentchange();
     });
 });
 
@@ -39,16 +39,16 @@ submit_click.forEach(function(submit_click_form){
     });
 });
 
-var heart=document.querySelector(".fa-heart");
-heart.addEventListener('click',function(){
-   heart.classList.toggle('heart');
-});
+// var heart=document.querySelector(".fa-heart");
+// heart.addEventListener('click',function(){
+//    heart.classList.toggle('heart');
+// });
 
 
-var share=document.querySelector(".fa-share-alt");
-share.addEventListener('click',function(){
-   share.classList.toggle('share');
-});
+// var share=document.querySelector(".fa-share-alt");
+// share.addEventListener('click',function(){
+//    share.classList.toggle('share');
+// });
 
  
 
@@ -63,10 +63,9 @@ function progress_forward(){
     // step_list.forEach(list => {
         
     //     list.classList.remove('active');
-         
+        
     // }); 
     
-     
     num.innerHTML = formnumber+1;
     step_list[formnumber].classList.add('active');
 }  
@@ -77,15 +76,15 @@ function progress_backward(){
     num.innerHTML = form_num;
 } 
  
-var step_num_content=document.querySelectorAll(".step-number-content");
+// var step_num_content=document.querySelectorAll(".step-number-content");
 
- function contentchange(){
-     step_num_content.forEach(function(content){
-        content.classList.remove('active'); 
-        content.classList.add('d-none');
-     }); 
-     step_num_content[formnumber].classList.add('active');
- } 
+//  function contentchange(){
+//      step_num_content.forEach(function(content){
+//         content.classList.remove('active'); 
+//         content.classList.add('d-none');
+//      }); 
+//      step_num_content[formnumber].classList.add('active');
+//  } 
  
  
 function validateform(){
@@ -101,5 +100,33 @@ function validateform(){
         }
     });
     return validate;
-    
 }
+
+// function validateform() {
+//     var radios = document.getElementsByName("p1_1");
+//     var validate = false;
+
+//     var i = 0;
+//     while (!validate && i < radios.length) {
+//         if (radios[i].checked) validate = true;
+//         i++;        
+//     }
+
+//     if (!validate) Swal.fire({
+//         title: "Wajib Memilih Jawaban",
+//         icon: "error",
+//         showConfirmButton: false,
+//         timer: 1250
+//     });
+//     return validate;
+// }
+
+
+// function validateform() {    
+//     if (document.getElementById('pilih').value== "Please Select")
+//     {
+//         alert('Please enter first name');
+//         document.getElementById('pilih').style.borderColor = "red"; 
+//         return validate;
+//     }    
+//   }

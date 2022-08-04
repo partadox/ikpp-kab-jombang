@@ -20,16 +20,16 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override(function( $message = null )
-{
+// $routes->set404Override(function( $message = null )
+// {
     
-    $data = [
-        'title' => '404 - Page not found',
-        'message' => $message,
-        'code'  => '404',
-    ];
-    echo view('errors/404', $data);
-});
+//     $data = [
+//         'title' => '404 - Page not found',
+//         'message' => $message,
+//         'code'  => '404',
+//     ];
+//     echo view('errors/404', $data);
+// });
 $routes->setAutoRoute(true);
 
 /**
@@ -42,6 +42,9 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->setDefaultNamespace('');
 $routes->get('/', 'Home::index');
+$routes->get('/survey', 'Home::survey');
+$routes->get('/success', 'Home::success');
+$routes->get('/save1st', 'Home::save1st');
 
 // $routes->get('/auth/login', 'Home::not_found');
 $routes->get('/login', 'Home::not_found');
@@ -67,32 +70,32 @@ $routes->get('/auth/dashboard', 'Dashboard::index', ['filter' => 'Validasilogin'
 // $routes->get('/auth/konfigurasi/user', 'Konfigurasi::user', ['filter' => 'Validasilogin']);
 //LAMA
 
-$routes->get('/auth/galeri', 'Galeri::index', ['filter' => 'Validasilogin']);
-$routes->get('/home/galeri/(:any)', 'Home::single_galeri/$1');
+// $routes->get('/auth/galeri', 'Galeri::index', ['filter' => 'Validasilogin']);
+// $routes->get('/home/galeri/(:any)', 'Home::single_galeri/$1');
 
-$routes->get('/auth/berita', 'Berita::index', ['filter' => 'Validasilogin']);
-$routes->get('/home/berita/(:any)', 'Home::single_berita/$1');
+// $routes->get('/auth/berita', 'Berita::index', ['filter' => 'Validasilogin']);
+// $routes->get('/home/berita/(:any)', 'Home::single_berita/$1');
 
-$routes->get('/auth/pengumuman', 'Pengumuman::index', ['filter' => 'Validasilogin']);
-$routes->get('/home/pengumuman/(:any)', 'Home::single_pengumuman/$1');
+// $routes->get('/auth/pengumuman', 'Pengumuman::index', ['filter' => 'Validasilogin']);
+// $routes->get('/home/pengumuman/(:any)', 'Home::single_pengumuman/$1');
 
-$routes->get('/auth/link', 'Link::index', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/link', 'Link::index', ['filter' => 'Validasilogin']);
 
-$routes->get('/auth/informasi', 'Informasi::index', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/informasi', 'Informasi::index', ['filter' => 'Validasilogin']);
 
-$routes->get('/auth/profil', 'Profil::index', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/profil', 'Profil::index', ['filter' => 'Validasilogin']);
 
-$routes->get('/auth/inovasi', 'Inovasi::index', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/inovasi', 'Inovasi::index', ['filter' => 'Validasilogin']);
 
-$routes->get('/auth/layanan', 'Layanan::index', ['filter' => 'Validasilogin']);
-$routes->get('/auth/layanan/kategori', 'Layanan::kategori', ['filter' => 'Validasilogin']);
-$routes->get('/home/layanan_kategori/(:any)', 'Home::layanan_kategori/$1');
-$routes->get('/home/layanan/(:any)', 'Home::layanan/$1');
+// $routes->get('/auth/layanan', 'Layanan::index', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/layanan/kategori', 'Layanan::kategori', ['filter' => 'Validasilogin']);
+// $routes->get('/home/layanan_kategori/(:any)', 'Home::layanan_kategori/$1');
+// $routes->get('/home/layanan/(:any)', 'Home::layanan/$1');
 
-$routes->get('/auth/medfo/alur_adu', 'Medfo::alur_adu', ['filter' => 'Validasilogin']);
-$routes->get('/auth/medfo/ikm', 'Medfo::ikm', ['filter' => 'Validasilogin']);
-$routes->get('/auth/medfo/penghargaan', 'Medfo::penghargaan', ['filter' => 'Validasilogin']);
-$routes->get('/home/penghargaan/(:any)', 'Home::single_penghargaan/$1');
+// $routes->get('/auth/medfo/alur_adu', 'Medfo::alur_adu', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/medfo/ikm', 'Medfo::ikm', ['filter' => 'Validasilogin']);
+// $routes->get('/auth/medfo/penghargaan', 'Medfo::penghargaan', ['filter' => 'Validasilogin']);
+// $routes->get('/home/penghargaan/(:any)', 'Home::single_penghargaan/$1');
 
 
 

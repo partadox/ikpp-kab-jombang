@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Website Resmi Dinas Kependudukan dan Catatan Sipil Kota Mojokerto">
+  <meta name="description" content="IKPP Kabupaten Jombang">
   
-  <meta name="Dinas Kependudukan dan Catatan Sipil Kota Mojokerto" content="https://dispenduk.mojokertokota.go.id/">
+  <meta name="IKPP Kabupaten Jombang" content="">
 
   <title>IKPP</title>
 
@@ -28,10 +28,6 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="<?= base_url()?>/assets/css/style.css">
-  <link rel="stylesheet" href="<?= base_url()?>/assets/css/responsive.css">
-
-  <!-- Map Responsive -->
-  <link rel="stylesheet" href="<?= base_url()?>/assets/css/map-responsive.css">
 
   <link rel="shortcut icon" type="image/x-icon" href="<?= base_url()?>/assets/images/favicon.png">
 
@@ -72,8 +68,6 @@
     <!--  Owlk Carousel-->
     <script src="<?= base_url()?>/assets/vendors/owl/owl.carousel.min.js"></script>
     <script src="<?= base_url()?>/assets/js/script.js"></script>
-
-    <script src="<?= base_url() ?>/assets/js/form_survey.js"></script>
 
     <script src="<?= base_url() ?>/assets/js/sweetalert2@10.js"></script>
 

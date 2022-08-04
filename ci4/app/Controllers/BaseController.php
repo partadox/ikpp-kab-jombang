@@ -31,19 +31,12 @@ use CodeIgniter\Controller;
 // use App\Models\Modelspp;
 use App\Models\Modeluser;
 
-use App\Models\Model_Galeri;
-use App\Models\Model_Galeri_Foto;
-use App\Models\Model_Berita;
-use App\Models\Model_Pengumuman;
-use App\Models\Model_Link;
-use App\Models\Model_Informasi;
-use App\Models\Model_Profil;
-use App\Models\Model_Inovasi;
+use App\Models\Model_Log;
 use App\Models\Model_Layanan;
 use App\Models\Model_Layanan_Kategori;
-use App\Models\Model_Medfo;
-use App\Models\Model_Penghargaan;
-use App\Models\Model_Log;
+use App\Models\Model_Pengumuman;
+
+use App\Models\Model_Survey;
 
 class BaseController extends Controller
 {
@@ -83,20 +76,13 @@ class BaseController extends Controller
 		
 		// $this->kelulusan = new Modelkelulusan($request);
 		// $this->konfigurasi = new Modelkonfigurasi;
-		// $this->user = new Modeluser;
-
-		$this->galeri			= new Model_Galeri;
-		$this->galeri_foto		= new Model_Galeri_Foto;
-		$this->berita 			= new Model_Berita;
+		$this->user = new Modeluser;
+	
+		$this->log 				= new Model_Log;
 		$this->pengumuman 		= new Model_Pengumuman;
-		$this->link 			= new Model_Link;
-		$this->informasi 		= new Model_Informasi;
-		$this->profil 			= new Model_Profil;
-		$this->inovasi 			= new Model_Inovasi;
 		$this->layanan 			= new Model_Layanan;
 		$this->layanan_kategori = new Model_Layanan_Kategori;
-		$this->medfo 			= new Model_Medfo;
-		$this->penghargaan 		= new Model_Penghargaan;		
-		$this->log 				= new Model_Log;
+
+		$this->survey 			= new Model_Survey;
 	}
 }
