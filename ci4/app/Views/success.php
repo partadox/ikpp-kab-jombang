@@ -25,7 +25,7 @@
                      
                     <div class="text congrats">
                         <h2>Berhasil!</h2>
-                        <h6>Penilaian untuk <?= $layanan ?> berhasil disimpan.</h6>
+                        <h6>Penilaian berhasil disimpan.</h6>
                     </div>
                     <div class="text-center">
                         <a class="btn btn-primary" href="#" id="logout">Kembali</a>

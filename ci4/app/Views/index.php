@@ -25,16 +25,17 @@
                         <h6>Pilih Layanan</a>
                     </div>
                     <div class="input-text">
-                        <div class="input-div">
+                        <div class="input-div mb-3">
                             <select class="form-select" id="survey_layanan" required>
                                 <option Disabled=true Selected=true>PILIH...</option>
-                                <option value="1">Dinas 1</option>
-                                <option value="2">Dinas 2</option>
+                                <?php foreach($ikm as $row): ?>
+                                    <option value="<?= $row['id_lembaga']?>"><?= $row['nama_lembaga']?></option>
+                                <?php endforeach?>
                             </select>
                             <div class="invalid-feedback error_survey_layanan">
                         </div>
                     </div>
-                    <div class="buttons">
+                    <div class="buttons text-center">
                         <button type="submit" class="btnsimpan"> Submit</button>
                     </div>
                 </div>

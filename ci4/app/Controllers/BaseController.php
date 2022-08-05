@@ -37,6 +37,7 @@ use App\Models\Model_Layanan_Kategori;
 use App\Models\Model_Pengumuman;
 
 use App\Models\Model_Survey;
+use App\Models\Model_Ikpp;
 
 class BaseController extends Controller
 {
@@ -84,5 +85,6 @@ class BaseController extends Controller
 		$this->layanan_kategori = new Model_Layanan_Kategori;
 
 		$this->survey 			= new Model_Survey;
+		$this->ikpp 			= new Model_Ikpp;
 	}
 }
