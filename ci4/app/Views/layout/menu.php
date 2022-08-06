@@ -8,7 +8,7 @@
         </li>
         
         <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
-            <a href="javascript:void(0);"> Hello, <?= session()->get('nama') ?> </a>
+            <a href="javascript:void(0);"> Halo, <?= session()->get('nama') ?> </a>
         </li>
 
         <li class="dropdown notification-list list-inline-item">
@@ -46,59 +46,20 @@
     </a>
 </li>
 
-<li class="menu-title">Postingan</li>
+<li class="menu-title">Menu</li>
 <li>
-    <a href="<?= base_url('auth/galeri') ?>" class="waves-effect">
-        <i class="mdi mdi-folder-image"></i> <span> Galeri </span>
+    <a href="<?= base_url('auth/ikpp') ?>" class="waves-effect">
+        <i class="mdi  mdi-file-document"></i> <span> IKPP </span>
     </a>
 </li>
 <li>
-    <a href="<?= base_url('auth/berita') ?>" class="waves-effect">
-        <i class="mdi mdi-newspaper"></i> <span> Berita </span>
+    <a href="<?= base_url('auth/ikm') ?>" class="waves-effect">
+        <i class="mdi mdi-file-document"></i> <span> API IKM </span>
     </a>
 </li>
 <li>
-    <a href="<?= base_url('auth/pengumuman') ?>" class="waves-effect">
-        <i class="mdi mdi-bullhorn-outline"></i> <span> Pengumuman </span>
-    </a>
-</li>
-
-<li class="menu-title">Statis Page</li>
-<li>
-    <a href="<?= base_url('auth/profil/') ?>" class="waves-effect">
-        <i class="mdi mdi-face-profile"></i> <span> Profil </span>
-    </a>
-</li>
-<li>
-    <a href="<?= base_url('auth/inovasi/') ?>" class="waves-effect">
-        <i class="mdi mdi-all-inclusive"></i> <span> Inovasi Layanan </span>
-    </a>
-</li>
-<li>
-    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-server"></i> <span> Layanan <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
-    <ul class="submenu">
-        <li><a href="<?= base_url('auth/layanan/kategori') ?>">Kategori</a></li>
-        <li><a href="<?= base_url('auth/layanan') ?>">Daftar Layanan</a></li>
-    </ul>
-</li>
-<li>
-    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-information-variant"></i> <span> Media & Informasi <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span> </a>
-    <ul class="submenu">
-        <li><a href="<?= base_url('auth/medfo/alur_adu') ?>">Alur Pengaduan Masy.</a></li>
-        <li><a href="<?= base_url('auth/medfo/penghargaan') ?>">Penghargaan</a></li>
-        <li><a href="<?= base_url('auth/medfo/ikm') ?>">Indeks Kepuasan Masy.</a></li>
-    </ul>
-</li>
-
-<li class="menu-title">Tampilan Depan</li>
-<li>
-    <a href="<?= base_url('auth/link/') ?>" class="waves-effect">
-        <i class="mdi mdi-web"></i> <span> Link Terkait </span>
-    </a>
-</li>
-<li>
-    <a href="<?= base_url('auth/informasi/') ?>" class="waves-effect">
-        <i class="mdi mdi-card-bulleted"></i> <span> Data Informasi </span>
+    <a href="<?= base_url('auth/user') ?>" class="waves-effect">
+        <i class="mdi mdi-account"></i> <span> User Management </span>
     </a>
 </li>
 

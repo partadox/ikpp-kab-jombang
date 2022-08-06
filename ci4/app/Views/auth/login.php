@@ -1,4 +1,4 @@
-<?= $this->extend('main') ?>
+<?= $this->extend('main_auth') ?>
 
 <?= $this->section('isi') ?>
 
@@ -9,7 +9,7 @@
                 <div id="signin">
                     <div><br></div>
                     <a style="margin-top: 10px;" href="" class="logo logo-admin mt-4"><img src="<?= base_url('assets/images/Logo-Dukcapil-Mojokerto.png') ?>" alt="" height="80"></a>
-                    <p>Isi form dibawah untuk masuk!</p>
+                    <h4>Indeks Kualitas Pelayanan Publik </h4>
                     <?= form_open('login/validasi', ['class' => 'formlogin']) ?>
                     <?= csrf_field() ?>
                         <div class="form-group">
@@ -20,8 +20,7 @@
                             <input type="password" placeholder="Password" name="password" id="password"  class="fadeIn ">
                             <div class="invalid-feedback errorPassword">
                         </div>
-                        <input type="submit" value="Masuk"></input>
-                        <p id="formFooter"><a href="https://dispenduk.mojokertokota.go.id/">Kembali ke Website Dispendukcapil Kota Mojokerto</a></p>
+                        <input type="submit" value="Login"></input>
                     <?= form_close() ?>
                 </div>
         </div>

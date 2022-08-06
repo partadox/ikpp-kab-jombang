@@ -1,24 +1,11 @@
-<?= form_open('konfigurasi/hapusalluser', ['class' => 'formhapus']) ?>
-
-<button type="submit" class="btn btn-danger btn-sm">
-    <i class="fa fa-trash"></i> Hapus yang diceklist
-</button>
-
-<hr>
-<table id="listuser" class="table table-striped dt-responsive " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+<table id="listuser" class="table table-striped table-bordered dt-responsive " style="border-collapse: collapse; border-spacing: 0; width: 100%;">
     <thead>
         <tr>
-            <th>
-                <input type="checkbox" id="centangSemua">
-            </th>
             <th>#</th>
-            <th>Username</th>
             <th>Nama</th>
-            <th>Email</th>
-            <th>Level</th>
+            <th>Username</th>
             <th>Status</th>
-            <th>Foto</th>
-            <th>Aksi</th>
+            <th>Tindakan</th>
         </tr>
     </thead>
 
@@ -28,24 +15,9 @@
         foreach ($list as $data) :
             $nomor++; ?>
             <tr>
-                <td>
-                    <input type="checkbox" name="user_id[]" class="centangUserid" value="<?= $data['user_id'] ?>">
-                </td>
                 <td><?= $nomor ?></td>
-                <td><?= esc($data['username']) ?></td>
                 <td><?= esc($data['nama']) ?></td>
-                <td><?= esc($data['email']) ?></td>
-                <td>
-                    <?php if ($data['level'] == '2') { ?>
-                        <h6>
-                            <span class="badge badge-primary">Admin</span>
-                        </h6>
-                    <?php } else { ?>
-                        <h6>
-                            <span class="badge badge-info">Author</span>
-                        </h6>
-                    <?php } ?>
-                </td>
+                <td><?= esc($data['username']) ?></td>
                 <td>
                     <?php if ($data['active'] == '1') { ?>
                         <h6>
@@ -57,7 +29,6 @@
                         </h6>
                     <?php } ?>
                 </td>
-                <td class="text-center"><img onclick="gambar('<?= $data['user_id'] ?>')" src="<?= base_url('img/user/thumb/' . 'thumb_' . $data['foto']) ?>" width="120px" class="img-thumbnail"></td>
                 <td>
                     <button type="button" class="btn btn-primary btn-sm" onclick="edit('<?= $data['user_id'] ?>')">
                         <i class="fa fa-edit"></i>
@@ -65,17 +36,13 @@
                     <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data['user_id'] ?>')">
                         <i class="fa fa-trash"></i>
                     </button>
-                    <?php if ($data['username'] != 'admin') { ?>
-                        <button type="button" onclick="toggle('<?= $data['user_id'] ?>')" class="btn btn-circle btn-sm <?= $data['active'] ? 'btn-secondary' : 'btn-success' ?>" title="<?= $data['active'] ? 'Nonaktifkan' : 'Aktifkan' ?>"><i class="fa fa-fw fa-power-off"></i>
-                        </button>
-                    <?php } ?>
                 </td>
             </tr>
 
         <?php endforeach; ?>
     </tbody>
 </table>
-<?= form_close() ?>
+
 <script>
     $(document).ready(function() {
         $('#listuser').DataTable();

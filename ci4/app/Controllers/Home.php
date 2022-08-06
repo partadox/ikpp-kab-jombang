@@ -12,21 +12,25 @@ class Home extends BaseController
 		$data = [
 			'title' 		=> '404',
 		];
-		return view('halaman/404', $data);
+		return view('errors/404', $data);
 	}
 
 	public function index()
 	{
-		$url 		= "http://sukmasantri.jombangkab.go.id/api";
-		$json 		= file_get_contents($url);
-		$json_data 	= json_decode($json, true);
-		
-		$data = [
-			'title' 		=> 'index',
-			'ikm'			=> $json_data
-		];
-		
-		return view('index', $data);
+		if (session('login')) {
+			return redirect()->to('/auth/dashboard');
+		} else {
+			$url 		= "http://sukmasantri.jombangkab.go.id/api";
+			$json 		= file_get_contents($url);
+			$json_data 	= json_decode($json, true);
+			
+			$data = [
+				'title' 		=> 'index',
+				'ikm'			=> $json_data
+			];
+			
+			return view('index', $data);
+		}
 	}
 
 	public function save1st()
@@ -128,7 +132,7 @@ class Home extends BaseController
 			return view('survey', $data);
 
 		} else {
-			return view('index');
+			return redirect()->to('/home/not_found');
 		}
 		
 	}
@@ -281,7 +285,7 @@ class Home extends BaseController
 			}
 
 			//Nilai konversi aslinya 1.25
-			$nilai_ikpp = (0.0125 * $ikm) + $nilai_ipp;
+			$nilai_ikpp = (1.25 * ($ikm / 25)) + $nilai_ipp;
 
 			if ((1.25 <= $nilai_ikpp) && ($nilai_ikpp <= 3.00)) {
 				$ikpp 		= "Buruk";
@@ -355,7 +359,55 @@ class Home extends BaseController
 					'ikpp'				=> $ikpp,
 					'ikpp_mutu'			=> $ikpp_mutu,
 					'dt'				=> date("Y-m-d H:i:s"),
-					'survey_id'			=> $survey_id
+					'survey_id'			=> $survey_id,
+					'ni_1'				=> $ni_1,
+					'ni_2'				=> $ni_2,
+					'ni_3'				=> $ni_3,
+					'ni_4'				=> $ni_4,
+					'ni_5'				=> $ni_5,
+					'ni_6'				=> $ni_6,
+					'ni_7'				=> $ni_7,
+					'ni_8'				=> $ni_8,
+					'ni_9'				=> $ni_9,
+					'ni_10'				=> $ni_10,
+					'ni_11'				=> $ni_11,
+					'ni_12'				=> $ni_12,
+					'ni_13'				=> $ni_13,
+					'ni_14'				=> $ni_14,
+					'ni_15'				=> $ni_15,
+					'ni_16'				=> $ni_16,
+					'ni_17'				=> $ni_17,
+					'ni_18'				=> $ni_18,
+					'ni_19'				=> $ni_19,
+					'ni_20'				=> $ni_20,
+					'ni_21'				=> $ni_21,
+					'ni_22'				=> $ni_22,
+					'ni_23'				=> $ni_23,
+					'ni_24'				=> $ni_24,
+					'ni_25'				=> $ni_25,
+					'ni_26'				=> $ni_26,
+					'ni_27'				=> $ni_27,
+					'ni_28'				=> $ni_28,
+					'ni_29'				=> $ni_29,
+					'ni_30'				=> $ni_30,
+					'ni_31'				=> $ni_31,
+					'ni_32'				=> $ni_32,
+					'ni_33'				=> $ni_33,
+					'ni_34'				=> $ni_34,
+					'ni_35'				=> $ni_35,
+					'ni_36'				=> $ni_36,
+					'ni_37'				=> $ni_37,
+					'nt_i'				=> $nt_i,
+					'np_i'				=> $np_i,
+					'nt_ii'				=> $nt_ii,
+					'np_ii'				=> $np_ii,
+					'nt_iii'			=> $nt_iii,
+					'np_iii'			=> $np_iii,
+					'nt_iv'				=> $nt_iv,
+					'np_iv'				=> $np_iv,
+					'nt_v'				=> $nt_v,
+					'np_v'				=> $np_v,
+					'np_vi'				=> $np_vi,
 				];
 				$this->ikpp->insert($data_ikpp);
 			} else {
@@ -368,7 +420,55 @@ class Home extends BaseController
 					'ikpp'				=> $ikpp,
 					'ikpp_mutu'			=> $ikpp_mutu,
 					'dt'				=> date("Y-m-d H:i:s"),
-					'survey_id'			=> $survey_id
+					'survey_id'			=> $survey_id,
+					'ni_1'				=> $ni_1,
+					'ni_2'				=> $ni_2,
+					'ni_3'				=> $ni_3,
+					'ni_4'				=> $ni_4,
+					'ni_5'				=> $ni_5,
+					'ni_6'				=> $ni_6,
+					'ni_7'				=> $ni_7,
+					'ni_8'				=> $ni_8,
+					'ni_9'				=> $ni_9,
+					'ni_10'				=> $ni_10,
+					'ni_11'				=> $ni_11,
+					'ni_12'				=> $ni_12,
+					'ni_13'				=> $ni_13,
+					'ni_14'				=> $ni_14,
+					'ni_15'				=> $ni_15,
+					'ni_16'				=> $ni_16,
+					'ni_17'				=> $ni_17,
+					'ni_18'				=> $ni_18,
+					'ni_19'				=> $ni_19,
+					'ni_20'				=> $ni_20,
+					'ni_21'				=> $ni_21,
+					'ni_22'				=> $ni_22,
+					'ni_23'				=> $ni_23,
+					'ni_24'				=> $ni_24,
+					'ni_25'				=> $ni_25,
+					'ni_26'				=> $ni_26,
+					'ni_27'				=> $ni_27,
+					'ni_28'				=> $ni_28,
+					'ni_29'				=> $ni_29,
+					'ni_30'				=> $ni_30,
+					'ni_31'				=> $ni_31,
+					'ni_32'				=> $ni_32,
+					'ni_33'				=> $ni_33,
+					'ni_34'				=> $ni_34,
+					'ni_35'				=> $ni_35,
+					'ni_36'				=> $ni_36,
+					'ni_37'				=> $ni_37,
+					'nt_i'				=> $nt_i,
+					'np_i'				=> $np_i,
+					'nt_ii'				=> $nt_ii,
+					'np_ii'				=> $np_ii,
+					'nt_iii'			=> $nt_iii,
+					'np_iii'			=> $np_iii,
+					'nt_iv'				=> $nt_iv,
+					'np_iv'				=> $np_iv,
+					'nt_v'				=> $nt_v,
+					'np_v'				=> $np_v,
+					'np_vi'				=> $np_vi,
 				];
 
 				$get_id_ikpp = $this->ikpp->select_id_ikpp($id_lembaga);

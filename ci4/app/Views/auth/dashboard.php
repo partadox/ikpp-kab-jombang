@@ -16,7 +16,7 @@
         <strong>Selamat datang!</strong> Anda login sebagai author.
     <?php } ?>
     <?php if (session()->get('level') == 2) { ?>
-        <strong>Selamat datang!</strong> Anda login sebagai admin.
+        <strong>Selamat datang di Panel Admin!</strong> <br> Untuk masuk halaman survey anda harus logout terlebih dahulu.
     <?php } ?>
 </div>
 <div class="row">
