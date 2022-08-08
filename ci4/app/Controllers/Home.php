@@ -477,7 +477,7 @@ class Home extends BaseController
 				$this->ikpp->update($id_ikpp, $data_ikpp);
 			}
 			
-			return redirect()->to('home/success');
+			return redirect()->to('success');
 	}
 
 	public function success()
