@@ -155,18 +155,21 @@ class Ikpp extends BaseController
             ->setCellValue('I4', 'IKM')
             ->setCellValue('J4', 'Nilai IPP')
             ->setCellValue('K4', 'Kategori IPP')
-            ->setCellValue('L4', 'IKPP')
-            ->setCellValue('M4', 'Kategori IKPP');
+            ->setCellValue('L4', 'Mutu IPP')
+            ->setCellValue('M4', 'Nilai IKPP')
+            ->setCellValue('N4', 'Kategori IKPP')
+            ->setCellValue('O4', 'Mutu IKPP');
         
         $sheet->getStyle('A4:G4')->applyFromArray($style_up);
-        $sheet->getStyle('I4:M4')->applyFromArray($style_up);
+        $sheet->getStyle('I4:O4')->applyFromArray($style_up);
 
-        $sheet->getStyle('A4:M4')->getAlignment()->setWrapText(true);
+        $sheet->getStyle('A4:O4')->getAlignment()->setWrapText(true);
         $sheet->getStyle('A5:B41')->getAlignment()->setWrapText(true);
+        $sheet->getStyle('K5:O5')->getAlignment()->setWrapText(true);
         $sheet->getStyle('C5:G41')->applyFromArray($isi_tengah);
         $sheet->getStyle('A5:A41')->applyFromArray($isi_tengah);
         $sheet->getStyle('B5:B41')->applyFromArray($isi_pinggir);
-        $sheet->getStyle('I5:M5')->applyFromArray($isi_tengah);
+        $sheet->getStyle('I5:O5')->applyFromArray($isi_tengah);
 
         $sheet->getStyle('D5:D41')->getFill()->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
         ->getStartColor()->setARGB('E2EFDA');
@@ -187,8 +190,10 @@ class Ikpp extends BaseController
         $spreadsheet->getActiveSheet()->getColumnDimension('I')->setWidth(15);
         $spreadsheet->getActiveSheet()->getColumnDimension('J')->setWidth(12);
         $spreadsheet->getActiveSheet()->getColumnDimension('K')->setWidth(10);
-        $spreadsheet->getActiveSheet()->getColumnDimension('L')->setWidth(8);
-        $spreadsheet->getActiveSheet()->getColumnDimension('M')->setWidth(10);
+        $spreadsheet->getActiveSheet()->getColumnDimension('L')->setWidth(10);
+        $spreadsheet->getActiveSheet()->getColumnDimension('M')->setWidth(8);
+        $spreadsheet->getActiveSheet()->getColumnDimension('N')->setWidth(10);
+        $spreadsheet->getActiveSheet()->getColumnDimension('O')->setWidth(10);
 
         $sheet->setCellValue('B5', '1. Tersedia Standar Pelayanan (SP) yang menjadi acuan dalam pemberian pelayanan kepada publik;');
         $sheet->setCellValue('B6', '2. Tersedia Standar Pelayanan (SP) yang menjadi acuan dalam pemberian pelayanan kepada publik (per jenis layanan);');
@@ -334,9 +339,11 @@ class Ikpp extends BaseController
 
         $sheet->setCellValue('I5', $list['nilai_ikm']);
         $sheet->setCellValue('J5', $list['nilai_ipp']);
-        $sheet->setCellValue('K5', $list['ipp'] . "(" . $list['ipp_mutu'] .")");
-        $sheet->setCellValue('L5', $list['nilai_ikpp']);
-        $sheet->setCellValue('M5', $list['ikpp']. "(" . $list['ikpp_mutu'] .")");
+        $sheet->setCellValue('K5', $list['ipp']);
+        $sheet->setCellValue('L5', $list['ipp_mutu']);
+        $sheet->setCellValue('M5', $list['nilai_ikpp']);
+        $sheet->setCellValue('N5', $list['ikpp']);
+        $sheet->setCellValue('O5', $list['ikpp_mutu']);
 
         $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($spreadsheet);
         $filename =  $judul . " " . date('Y-m-d-His');

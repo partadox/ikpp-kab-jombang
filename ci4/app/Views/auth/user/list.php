@@ -88,8 +88,7 @@
                     success: function(response) {
                         if (response.sukses) {
                             Swal.fire({
-                                title: "Berhasil!",
-                                text: response.sukses,
+                                title: "Data Berhasil Dihapus!",
                                 icon: "success",
                                 showConfirmButton: false,
                                 timer: 1500
