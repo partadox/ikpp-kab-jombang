@@ -45,7 +45,7 @@ class Ikpp extends BaseController
             return redirect()->to('auth/dashboard');
         }
 
-        $judul = "Lembar Penilaian Kinerja Unit Penyelenggara Pelayanan Publik (UPP) " . $list['nama_lembaga'];
+        $judul = "Penilaian Kinerja UPP - " . $list['nama_lembaga'];
         $tgl   = "Tanggal Download Laporan - " . date("d-m-Y");
         $spreadsheet = new \PhpOffice\PhpSpreadsheet\Spreadsheet();
 
@@ -162,7 +162,7 @@ class Ikpp extends BaseController
         $sheet->getStyle('I4:M4')->applyFromArray($style_up);
 
         $sheet->getStyle('A4:M4')->getAlignment()->setWrapText(true);
-        $sheet->getStyle('B5:B41')->getAlignment()->setWrapText(true);
+        $sheet->getStyle('A5:B41')->getAlignment()->setWrapText(true);
         $sheet->getStyle('C5:G41')->applyFromArray($isi_tengah);
         $sheet->getStyle('A5:A41')->applyFromArray($isi_tengah);
         $sheet->getStyle('B5:B41')->applyFromArray($isi_pinggir);

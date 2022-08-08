@@ -24,20 +24,16 @@
                         <hr>
                         <h6>Pilih Layanan</a>
                     </div>
-                    <div class="input-text">
-                        <div class="input-div mb-3">
-                            <select class="form-select" id="survey_layanan" required>
-                                <option Disabled=true Selected=true>PILIH...</option>
-                                <?php foreach($ikm as $row): ?>
-                                    <option value="<?= $row['id_lembaga']?>"><?= $row['nama_lembaga']?></option>
-                                <?php endforeach?>
-                            </select>
-                            <div class="invalid-feedback error_survey_layanan">
-                        </div>
-                    </div>
-                    <div class="buttons text-center">
-                        <button type="submit" class="btnsimpan"> Submit</button>
-                    </div>
+                    <select class="js-example-basic-single" id="survey_layanan" required>
+                        <option Disabled=true Selected=true>PILIH...</option>
+                        <?php foreach($ikm as $row): ?>
+                            <option value="<?= $row['id_lembaga']?>"><?= $row['nama_lembaga']?></option>
+                        <?php endforeach?>
+                    </select>
+                    <div class="invalid-feedback error_survey_layanan">
+                </div>
+                <div class="buttons text-center mt-3">
+                    <button type="submit" class="btnsimpan"> Submit</button>
                 </div>
                 <?= form_close() ?>
             </div>
@@ -47,6 +43,10 @@
 
 <script>
     $(document).ready(function() {
+
+        $('.js-example-basic-single').select2({
+            theme: "bootstrap4"
+        });
 
         $('.formtambah').submit(function(e) {
             e.preventDefault();

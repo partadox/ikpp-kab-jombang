@@ -477,7 +477,7 @@ class Home extends BaseController
 				$this->ikpp->update($id_ikpp, $data_ikpp);
 			}
 			
-			return redirect()->to('/success');
+			return redirect()->to('public/success');
 	}
 
 	public function success()
@@ -488,6 +488,24 @@ class Home extends BaseController
 		
 		return view('success', $data);
 	}
+
+	public function back_layanan()
+    {
+        if ($this->request->isAJAX()) {
+
+			$survey_id 		= session()->get('sid');
+			$this->survey->delete($survey_id );
+
+            $this->session->destroy();
+
+            $data = [
+                'respond'   => 'success',
+                'message'   => 'Berhasil!'
+            ];
+
+            echo json_encode($data);
+        }
+    }
 
 	public function try()
     {

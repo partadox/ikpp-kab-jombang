@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Website Resmi Dinas Kependudukan dan Catatan Sipil Kota Mojokerto">
+  <meta name="description" content="IKPP Kab. Jombang">
   
-  <meta name="Dinas Kependudukan dan Catatan Sipil Kota Mojokerto" content="https://dispenduk.mojokertokota.go.id/">
+  <meta name="IKPP Kab. Jombang" content="">
 
-  <title>Dinas Kependudukan dan Catatan Sipil Kota Mojokerto Official Website</title>
+  <title>IKPP Kab. Jombang</title>
 
   <!-- Mobile Specific Meta-->
   <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -98,6 +98,7 @@
                         </label>			
                     </div>
                     <div class="buttons button_space">
+                        <button type="button" class="back_button" id="logout">Back</button>
                         <button type="button" class="next_button">Next</button>
                     </div>
                 </div>
@@ -1583,6 +1584,37 @@
     </div>
 </div>
 <?php echo form_close() ?>
+<script>
+    $('button#logout').on('click', function(e) {
+        e.preventDefault();
+        Swal.fire({
+            title: 'Kembali Pilih Layanan',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Ya'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "<?= site_url('home/back_layanan') ?>",
+                    type: 'post',
+                    dataType: 'json',
+                    success: function(response) {
+                        Swal.fire({
+                            title: "Redirect",
+                            icon: "success",
+                            showConfirmButton: false,
+                            timer: 1250
+                        }).then(function() {
+                            window.location = '<?= site_url('/') ?>';
+                        });
+                    }
+                });
+            }
+        })
+    })
+</script>
 
 <script src="<?= base_url() ?>/assets/js/form_survey.js"></script>
 
