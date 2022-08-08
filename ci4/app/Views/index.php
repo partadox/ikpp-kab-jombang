@@ -24,7 +24,7 @@
                         <hr>
                         <h6>Pilih Layanan</a>
                     </div>
-                    <select class="js-example-basic-single" id="survey_layanan" required>
+                    <select class="js-example-basic-single" id="survey_layanan" data-width="100%" required>
                         <option Disabled=true Selected=true>PILIH...</option>
                         <?php foreach($ikm as $row): ?>
                             <option value="<?= $row['id_lembaga']?>"><?= $row['nama_lembaga']?></option>
