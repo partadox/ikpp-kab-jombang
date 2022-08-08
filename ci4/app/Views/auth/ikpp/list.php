@@ -12,7 +12,7 @@
             <th width="8%">Mutu IKPP</th>
             <th width="8%">Kat. IKPP</th>
             <th width="8%">Waktu</th>
-            <th width="8%">Tindakan</th>
+            <th width="8%">Laporan</th>
         </tr>
     </thead>
 
@@ -35,7 +35,7 @@
                 <td><?= $data['dt'] ?></td>
                 <td>
                     <a href="ikpp/laporan/<?= $data['id_ikpp'] ?>" class="btn btn-primary">
-                            <i class=" fa fa-file-contract mr-1"></i>Laporan
+                            <i class=" fa fa-file-excel mr-1"></i>Excel
                      </a>
                 </td>
             </tr>

@@ -38,7 +38,7 @@
         $('.tambahuser').click(function(e) {
             e.preventDefault();
             $.ajax({
-                url: "<?= site_url('konfigurasi/formuser') ?>",
+                url: "<?= site_url('user/formtambah') ?>",
                 dataType: "json",
                 success: function(response) {
                     $('.viewmodal').html(response.data).show();

@@ -53,8 +53,9 @@ $routes->get('/portal', 'Login::index');
 
 $routes->get('/dashboard', 'Dashboard::index', ['filter' => 'Validasilogin']);
 $routes->get('/auth/dashboard', 'Dashboard::index', ['filter' => 'Validasilogin']);
+$routes->get('/auth/auth/dashboard', 'Dashboard::index', ['filter' => 'Validasilogin']);
 $routes->get('/auth/ikpp', 'Ikpp::index', ['filter' => 'Validasilogin']);
-$routes->get('/auth/ikpp/(:any)', 'Ikpp::laporan/$1');
+$routes->get('/auth/ikpp/laporan/(:any)', 'Ikpp::export_excel/$1');
 $routes->get('/auth/ikm', 'Ikm::index', ['filter' => 'Validasilogin']);
 $routes->get('/auth/user', 'User::index', ['filter' => 'Validasilogin']);
 
