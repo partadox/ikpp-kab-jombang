@@ -94,11 +94,13 @@ class User extends BaseController
                     ]
                 ];
             } else {
+                $password = $this->request->getVar('password');
                 $simpandata = [
                     'username'     => $this->request->getVar('username'),
                     'nama'         => strtoupper($this->request->getVar('nama')),
-                    'password'     => (password_hash($this->request->getVar('password'), PASSWORD_BCRYPT)),
+                    'password'     => (password_hash($password, PASSWORD_BCRYPT)),
                     'active'       => $this->request->getVar('active'),
+                    'level'     => 2,
                 ];
 
                 $this->user->insert($simpandata);

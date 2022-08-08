@@ -8,7 +8,6 @@
 
                 <div id="signin">
                     <div><br></div>
-                    <a style="margin-top: 10px;" href="" class="logo logo-admin mt-4"><img src="<?= base_url('assets/images/Logo-Dukcapil-Mojokerto.png') ?>" alt="" height="80"></a>
                     <h4>Indeks Kualitas Pelayanan Publik </h4>
                     <?= form_open('login/validasi', ['class' => 'formlogin']) ?>
                     <?= csrf_field() ?>
