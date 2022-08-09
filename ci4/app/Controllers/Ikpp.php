@@ -269,7 +269,7 @@ class Ikpp extends BaseController
         $sheet->setCellValue('C38', '20%');
         $sheet->setCellValue('C39', '30%');
         $sheet->setCellValue('C40', '30%');
-        $sheet->setCellValue('C41', '10%');
+        $sheet->setCellValue('C41', '100%');
 
         $sheet->setCellValue('D5', $list['ni_1']);
         $sheet->setCellValue('D6', $list['ni_2']);

@@ -250,7 +250,7 @@ class Home extends BaseController
 			$np_v 		= $nt_v * 0.15;
 
 			//VI 37
-			$ni_37		= $p1_37 * 0.1;
+			$ni_37		= $p1_37;
 			$np_vi 		= $ni_37 * 0.07;
 
 			$nilai_ipp  = $np_i + $np_ii + $np_iii + $np_iv + $np_v + $np_vi;
