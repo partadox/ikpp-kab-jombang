@@ -15,28 +15,28 @@ class Home extends BaseController
 		return view('errors/404', $data);
 	}
 
-	// public function index()
-	// {
-	// 	if (session('login')) {
-	// 		return redirect()->to('/auth/dashboard');
-	// 	} else {
-	// 		$url 		= "http://sukmasantri.jombangkab.go.id/api";
-	// 		$json 		= file_get_contents($url);
-	// 		$json_data 	= json_decode($json, true);
-			
-	// 		$data = [
-	// 			'title' 		=> 'index',
-	// 			'ikm'			=> $json_data
-	// 		];
-			
-	// 		return view('index', $data);
-	// 	}
-	// }
-
 	public function index()
 	{
-		return view('welcome_message');
+		if (session('login')) {
+			return redirect()->to('/auth/dashboard');
+		} else {
+			$url 		= "http://sukmasantri.jombangkab.go.id/api";
+			$json 		= file_get_contents($url);
+			$json_data 	= json_decode($json, true);
+			
+			$data = [
+				'title' 		=> 'index',
+				'ikm'			=> $json_data
+			];
+			
+			return view('index', $data);
+		}
 	}
+
+	// public function index()
+	// {
+	// 	return view('welcome_message');
+	// }
 
 	public function save1st()
     {
