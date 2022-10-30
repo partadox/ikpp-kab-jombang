@@ -97,6 +97,17 @@
                             5. Penetapan ketentuan Standar Pelayanan telah dibuat terhadap semua jenis pelayanan yang ditetapkan, dan sesuai asas serta komponen standar pelayanan publik yang berlaku.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_1" name="url_1">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_1" name="pnl_1"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button" id="logout">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -137,6 +148,17 @@
                             <input type="radio" name="p1_2" id="p1_2" value="5">
                             5.	Jumlah Standar Pelayanan perjenis pelayanan >80% dari jumlah pelayanan
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_2" name="url_2">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_2" name="pnl_2"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -179,6 +201,17 @@
                             5.	Sistem antrian secara elektronik dan dibagi setiap jenis layanan / atau dikelompokkan bagi  setiap jenis layanan yang serumpun. Nomor antrian ditampilkan (di layar antrian) dan diarahkan ke loket yang dituju, serta dipandu melalui pengeras suara.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_3" name="url_3">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_3" name="pnl_3"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -219,6 +252,17 @@
                             <input type="radio" name="p1_4" id="p1_4" value="5">
                             5.	Penyusunan SP mengikut sertakan masyarakat yang mewakili berbagai unsur dan profesi antara lain: (1) tokoh masyarakat (2) akademisi, (3) dunia usaha, dan (4) lembaga swadaya masyarakat. Serta memanfaatkan masukan hasil SKM dan pengaduan masyarakat .
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_4" name="url_4">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_4" name="pnl_4"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -261,6 +305,17 @@
                             5.	SP yang ditetapkan telah didokumentasikan dan dipublikasikan hanya di area ruang pelayanan (leaflet/pamflet/brosur, poster/banner, buku saku/katalog), media informasi (baliho/billboard), media cetak dan website/media sosial.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_5" name="url_5">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_5" name="pnl_5"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -301,6 +356,17 @@
                             <input type="radio" name="p1_6" id="p1_6" value="5">
                             5.	SP yang ditetapkan telah sesuai ketentuan peraturan perundang-undangan yang berlaku, telah disosialisasikan, dan melibatkan masyarakat dalam penyusunannya, serta melakukan monev berkelanjut
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_6" name="url_6">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_6" name="pnl_6"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -343,6 +409,17 @@
                             5.	Informasi tentang SP dapat diakses dengan bertanya kepada petugas secara tatap muka, membaca di lokasi tempat layanan, melalui media sms/telepon, email, website/media sosial.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_7" name="url_7">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_7" name="pnl_7"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -383,6 +460,17 @@
                             <input type="radio" name="p1_8" id="p1_8" value="5">
                             5.	SP yang ditetapkan telah memberikan kemudahan persyaratan, prosedur, dan kepastian     layanan (waktu, biaya, produk layanan) serta pengelolaan konsultasi dan pengaduan.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_8" name="url_8">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_8" name="pnl_8"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -425,6 +513,17 @@
                             5.	Maklumat Pelayanan dipublikasikan di media informasi di dalam ruangan (poster/banner, leaflet/pamflet/brosur, buku saku/katalog, media cetak) media sosial atau website dan area pemerintahan lainnya (baliho/billboard).
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_9" name="url_9">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_9" name="pnl_9"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -465,6 +564,17 @@
                             <input type="radio" name="p1_10" id="p1_10" value="5">
                             5.	Pengisian Kuesioner oleh seluruh pengguna layanan baik secara langsung dan/atau online, baik yang permohonannya disetujui maupun ditolak.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_10" name="url_10">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_10" name="pnl_10"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -507,6 +617,17 @@
                             5.	Informasi SKM tersedia dan dipublikasi di berbagai tempat dan media informasi (tersedia di area ruang pelayanan, media sosial, website, baliho/banner, leaflet/pamflet/brosur, buku saku/katalog, poster dan media cetak). 
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_11" name="url_11">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_11" name="pnl_11"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -547,6 +668,17 @@
                             <input type="radio" name="p1_12" id="p1_12" value="5">
                             5.	Hasil SKM seluruh jenis pelayanan dalam bentuk saran dan rekomendasi ditindaklanjuti dan dipergunakan sebagai acuan perbaikan layanan dan kebijakan layanan oleh pimpinan daerah maupun pimpinan penyelenggara.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_12" name="url_12">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_12" name="pnl_12"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -589,6 +721,17 @@
                             5.	Saran, kritik, dan rekomendasi hasil SKM ditindaklanjuti seluruhnya sebelum terbit laporan SKM.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_13" name="url_13">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_13" name="pnl_13"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -629,6 +772,17 @@
                             <input type="radio" name="p1_14" id="p1_14" value="5">
                             5.	Ketersediaan pelaksana layanan dengan kompetensi sesuai kebutuhan jenis layanan, > 80% dari nomenklatur ditetapkan.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_14" name="url_14">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_14" name="pnl_14"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -671,6 +825,17 @@
                             5.	Jam kerja layanan harian dari 08.00 – 16.00 tanpa jeda waktu istirahat pelayanan, baik untuk layanan informasi, konsultasi dan pengaduan serta Customer Service (dengan sistem istirahat bergilir bagi pegawai tanpa menghentikan pelayanan bagi publik saat istirahat). Adanya penambahan waktu ekstra pelayanan misal; Sabtu/Minggu/Loket Malam.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_15" name="url_15">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_15" name="pnl_15"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -711,6 +876,17 @@
                             <input type="radio" name="p1_16" id="p1_16" value="5">
                             5. Cepat
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_16" name="url_16">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_16" name="pnl_16"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -753,6 +929,17 @@
                             5.	Aturan Perilaku dan Kode Etik Pelaksana Layanan meliputi hak dan kewajiban, larangan KKN, larangan diskriminasi, sanksi dan penghargaan.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_17" name="url_17">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_17" name="pnl_17"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -793,6 +980,17 @@
                             <input type="radio" name="p1_18" id="p1_18" value="5">
                             5.	Pemberian penghargan diberikan kepada pegawai setiap 1 (satu) bulan.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_18" name="url_18">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_18" name="pnl_18"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -835,6 +1033,17 @@
                             5.	Pemberian sanksi diberikan kepada pegawai selambatnya 1 (satu) bulan sejak ditetapkan melanggar.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_19" name="url_19">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_19" name="pnl_19"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -875,6 +1084,17 @@
                             <input type="radio" name="p1_20" id="p1_20" value="5">
                             5.	Pelaksana layanan mengenakan pakaian seragam khusus, Identitas Nama, PIN/Atribut/logo unit pelayanan, mempraktekkan 5S.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_20" name="url_20">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_20" name="pnl_20"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -917,6 +1137,17 @@
                             5.	Tersedia tempat parkir yang luas di dalam area kantor dengan petugas parkir, dilengkapi CCTV, pemeriksaan karcis/kartu parkir dan STNK, terpisah antara kendaraan roda dua dan roda empat dengan tarif gratis serta ada perlakuan khusus bagi kelompok rentan.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_21" name="url_21">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_21" name="pnl_21"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -957,6 +1188,17 @@
                             <input type="radio" name="p1_22" id="p1_22" value="5">
                             5.	Sarana ruang tunggu dilengkapi fasilitas televisi, bahan bacaan, monitor antrian, AC/sirkulasi udara, air minum, dan fasilitas penunjang (hotspot/wifi, area merokok terisolasi, serta tersedia ruang ibadah baik menyatu ataupun terpisah).
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_22" name="url_22">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_22" name="pnl_22"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -999,6 +1241,17 @@
                             5.	Toilet disediakan terpisah antara pria dan wanita serta ada pilihan kloset duduk maupun jongkok dilengkapi wastafel dan toiletres.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_23" name="url_23">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_23" name="pnl_23"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1039,6 +1292,17 @@
                             <input type="radio" name="p1_24" id="p1_24" value="5">
                             5.	Tersedia step lobby/ramp bagi pengguna kursi roda, tersedia toilet khusus difabel, tersedia loket khusus difabel/lansia/ibu hamil/berkebutuhan khusus lainnya serta ada petugas khusus yang membantu.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_24" name="url_24">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_24" name="pnl_24"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1081,6 +1345,17 @@
                             5.	Tersedia kantin, fotocopy, toko ATK , Ruang Laktasi/nursery, arena bermain anak.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_25" name="url_25">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_25" name="pnl_25"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1121,6 +1396,17 @@
                             <input type="radio" name="p1_26" id="p1_26" value="5">
                             5.	Tersedia sarana Front Office untuk layanan konsultasi dan infromasi berupa ruangan khusus (dapat digabung dengan pengaduan dan informasi) di bagian depan kantor/terlihat/mudah diakses yang terpisah dari layanan lainnya.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_26" name="url_26">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_26" name="pnl_26"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1163,6 +1449,17 @@
                             5.	Tersedia sarana Front Office untuk layanan pengaduan berupa ruangan khusus (dapat digabung dengan informasi dan konsultasi) di bagian depan kantor/terlihat/mudah diakses yang terpisah dari layanan lainnya.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_27" name="url_27">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_27" name="pnl_27"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1203,6 +1500,17 @@
                             <input type="radio" name="p1_28" id="p1_28" value="5">
                             5.	Sistem informasi pelayanan publik telah online dan telah memenuhi unsur profil penyelenggara, pelaksana, standar pelayanan, maklumat pelayanan, pengelolaan pengaduan dan penilaian kinerja lembaga.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_28" name="url_28">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_28" name="pnl_28"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1245,6 +1553,17 @@
                             5.	SIPP dikembangkan meliputi sistem data informasi pelayanan, Aplikasi otomasi proses kerja (bussiness process), Keuangan, sistem pengelolaan pengaduan, SKM dan SDM.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_29" name="url_29">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_29" name="pnl_29"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1285,6 +1604,17 @@
                             <input type="radio" name="p1_30" id="p1_30" value="5">
                             5.	Situs merupakan milik unit pelayanan dan dikelola langsung.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_30" name="url_30">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_30" name="pnl_30"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1327,6 +1657,17 @@
                             5.	Pemutakhiran informasi pelayanan publik dilakukan secara terus menerus setiap hari.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_31" name="url_31">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_31" name="pnl_31"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1367,6 +1708,17 @@
                             <input type="radio" name="p1_32" id="p1_32" value="5">
                             5.	Informasi non elektronik berupa poster / spanduk / leaflet / buku / dokumen / bahan cetak lain yang berisi profil penyelenggara, profil pelaksana dll didokumentasikan dan dipublikasikan di area ruang pelayanan, ruang publik (contoh alun-alun, perempatan jalan dll), perpustakaan daerah, kantor pemerintah yang lain, dan didistribusikan ke stakeholder.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_32" name="url_32">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_32" name="pnl_32"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1409,6 +1761,17 @@
                             5.	Sarana dan petugas lengkap (media sosial, email, surat, telepon, tatap muka, tempat khusus, dan petugas khusus).
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_33" name="url_33">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_33" name="pnl_33"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1449,6 +1812,17 @@
                             <input type="radio" name="p1_34" id="p1_34" value="5">
                             5.	Arsip proses konsultasi terdokumentasi dan mudah diakses di website, majalah, dokumen/arsip lainnya.
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_34" name="url_34">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_34" name="pnl_34"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
@@ -1491,6 +1865,17 @@
                             5.	Terdapat lengkap sarana dan petugas pelayanan pengaduan (online, media sosial, email, surat, telpon, kotak pengaduan, tatap    muka, tempat khusus, dan petugas khusus).
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_35" name="url_35">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_35" name="pnl_35"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1532,6 +1917,17 @@
                             5.	Arsip proses/hasil pengaduan terdokumentasi dan mudah diakses di website, majalah, dokumen/arsip lainnya.
                         </label>			
                     </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_36" name="url_36">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_36" name="pnl_36"> </textarea>
+                        </div>
+                    </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>
                         <button type="button" class="next_button">Next</button>
@@ -1571,6 +1967,17 @@
                             <input type="radio" name="p1_37" id="p1_37" value="5">
                             5.	Tersedia inovasi, dilaksanakan lebih dari 1 tahun dan memberi manfaat pada masyarakat, berkelanjutan, dapat atau sudah     direplikasi serta sudah diikutsertakan dalam Kompetisi Inovasi Pelayanan Publik / sudah mendapat penghargaan (nasional/internasional).
                         </label>			
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="form-group">
+                            <label>Bukti URL</label>
+                            <input type="text" class="form-control" id="url_37" name="url_37">
+                        </div>
+                        <div class="form-group">
+                            <label>Penjelasan Penilai</label>
+                            <textarea class="form-control" id="pnl_37" name="pnl_37"> </textarea>
+                        </div>
                     </div>
                     <div class="buttons button_space">
                         <button type="button" class="back_button">Back</button>

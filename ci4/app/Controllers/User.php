@@ -100,7 +100,7 @@ class User extends BaseController
                     'nama'         => strtoupper($this->request->getVar('nama')),
                     'password'     => (password_hash($password, PASSWORD_BCRYPT)),
                     'active'       => $this->request->getVar('active'),
-                    'level'     => 2,
+                    'level'        => 2,
                 ];
 
                 $this->user->insert($simpandata);
