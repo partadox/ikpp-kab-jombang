@@ -17,18 +17,6 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-// use App\Models\Modelfoto;
-// use App\Models\Modelgallery;
-// use App\Models\Modelstaf;
-// use App\Models\Modelmapel;
-// use App\Models\Modelguru;
-// use App\Models\Modelkategori;
-// use App\Models\Modelsiswa;
-// use App\Models\Modelkelas;
-// use App\Models\Modelkelulusan;
-// use App\Models\Modelkonfigurasi;
-
-// use App\Models\Modelspp;
 use App\Models\Modeluser;
 
 use App\Models\Model_Log;
@@ -38,6 +26,11 @@ use App\Models\Model_Pengumuman;
 
 use App\Models\Model_Survey;
 use App\Models\Model_Ikpp;
+
+use App\Models\Model_Survey_Url;
+use App\Models\Model_Survey_Upd;
+use App\Models\Model_Survey_Pnl;
+use App\Models\Model_Survey_File;
 
 class BaseController extends Controller
 {
@@ -64,19 +57,7 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.:
 		$this->session = \Config\Services::session();
-		// $this->staf = new Modelstaf;
-		// $this->mapel = new Modelmapel;
-		// $this->guru = new Modelguru;
-		// $this->siswa = new Modelsiswa($request);
-		// $this->kelas = new Modelkelas;
-		// $this->spp = new Modelspp($request);
-		// $this->kategori = new Modelkategori;
-		
-		// $this->gallery = new Modelgallery;
-		// $this->foto = new Modelfoto;
-		
-		// $this->kelulusan = new Modelkelulusan($request);
-		// $this->konfigurasi = new Modelkonfigurasi;
+
 		$this->user = new Modeluser;
 	
 		$this->log 				= new Model_Log;
@@ -86,5 +67,10 @@ class BaseController extends Controller
 
 		$this->survey 			= new Model_Survey;
 		$this->ikpp 			= new Model_Ikpp;
+
+		$this->url 				= new Model_Survey_Url;
+		$this->upd 				= new Model_Survey_Upd;
+		$this->pnl 				= new Model_Survey_Pnl;
+		$this->file				= new Model_Survey_File;
 	}
 }

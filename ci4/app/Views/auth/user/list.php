@@ -4,6 +4,7 @@
             <th>#</th>
             <th>Nama</th>
             <th>Username</th>
+            <th>Roles</th>
             <th>Status</th>
             <th>Tindakan</th>
         </tr>
@@ -19,6 +20,21 @@
                 <td><?= esc($data['nama']) ?></td>
                 <td><?= esc($data['username']) ?></td>
                 <td>
+                    <?php if ($data['level'] == '1') { ?>
+                        <h6>
+                            <span class="badge badge-success">Admin</span>
+                        </h6>
+                    <?php } elseif ($data['level'] == '2') { ?>
+                        <h6>
+                            <span class="badge badge-warning">Penilai</span>
+                        </h6>
+                    <?php } elseif ($data['level'] == '3') { ?>
+                        <h6>
+                            <span class="badge badge-secondary">UPD</span>
+                        </h6>
+                    <?php } ?>
+                </td>
+                <td>
                     <?php if ($data['active'] == '1') { ?>
                         <h6>
                             <span class="badge badge-success">Aktif</span>
@@ -31,10 +47,10 @@
                 </td>
                 <td>
                     <button type="button" class="btn btn-primary btn-sm" onclick="edit('<?= $data['user_id'] ?>')">
-                        <i class="fa fa-edit"></i>
+                        <i class="fa fa-edit mr-1 mb-1"></i> Edit
                     </button>
                     <button type="button" class="btn btn-danger btn-sm" onclick="hapus('<?= $data['user_id'] ?>')">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash mr-1"></i> Hapus
                     </button>
                 </td>
             </tr>

@@ -59,6 +59,8 @@ $routes->get('/auth/ikpp/laporan/(:any)', 'Ikpp::export_excel/$1');
 $routes->get('/auth/ikm', 'Ikm::index', ['filter' => 'Validasilogin']);
 $routes->get('/auth/user', 'User::index', ['filter' => 'Validasilogin']);
 
+$routes->get('/auth/ikpp/riwayat/(:num)', 'Ikpp::riwayat/$1', ['filter' => 'Validasilogin']);
+
 //LAMA
 // $routes->get('/auth/staf', 'Staf::index', ['filter' => 'Validasilogin']);
 // $routes->get('/auth/guru', 'Guru::index', ['filter' => 'Validasilogin']);

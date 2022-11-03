@@ -34,8 +34,11 @@
                 <td><?= $data['ikpp_mutu'] ?></td>
                 <td><?= $data['dt'] ?></td>
                 <td>
-                    <a href="ikpp/laporan/<?= $data['id_ikpp'] ?>" class="btn btn-primary">
+                    <a href="ikpp/laporan/<?= $data['id_ikpp'] ?>" class="btn btn-primary mb-2">
                             <i class=" fa fa-file-excel mr-1"></i>Excel
+                     </a>
+                     <a href="ikpp/riwayat/<?= $data['id_lembaga'] ?>" class="btn btn-secondary">
+                            <i class=" fa fa-file-archive mr-1"></i>Survey
                      </a>
                 </td>
             </tr>

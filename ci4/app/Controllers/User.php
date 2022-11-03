@@ -76,6 +76,13 @@ class User extends BaseController
                         'required' => '{field} tidak boleh kosong',
                     ]
                 ],
+                'level' => [
+                    'label' => 'roles',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong',
+                    ]
+                ],
                 'active' => [
                     'label' => 'active',
                     'rules' => 'required',
@@ -90,6 +97,7 @@ class User extends BaseController
                         'username'  => $validation->getError('username'),
                         'nama'      => $validation->getError('nama'),
                         'password'  => $validation->getError('password'),
+                        'level'     => $validation->getError('level'),  
                         'active'    => $validation->getError('active'),   
                     ]
                 ];
@@ -100,7 +108,7 @@ class User extends BaseController
                     'nama'         => strtoupper($this->request->getVar('nama')),
                     'password'     => (password_hash($password, PASSWORD_BCRYPT)),
                     'active'       => $this->request->getVar('active'),
-                    'level'        => 2,
+                    'level'        => $this->request->getVar('level'),
                 ];
 
                 $this->user->insert($simpandata);
@@ -126,6 +134,7 @@ class User extends BaseController
                 'username'   => $user['username'],
                 'nama'       => $user['nama'],
                 'active'     => $user['active'],
+                'level'     => $user['level'],
             ];
             $msg = [
                 'sukses' => view('auth/user/edit', $data)
@@ -154,6 +163,13 @@ class User extends BaseController
                         'required' => '{field} tidak boleh kosong',
                     ]
                 ],
+                'level' => [
+                    'label' => 'roles',
+                    'rules' => 'required',
+                    'errors' => [
+                        'required' => '{field} tidak boleh kosong',
+                    ]
+                ],
                 'active' => [
                     'label' => 'active',
                     'rules' => 'required',
@@ -167,6 +183,7 @@ class User extends BaseController
                     'error' => [
                         'username'  => $validation->getError('username'),
                         'nama'      => $validation->getError('nama'),
+                        'level'    => $validation->getError('level'),  
                         'active'    => $validation->getError('active'),   
                     ]
                 ];
@@ -176,6 +193,7 @@ class User extends BaseController
                     $update_data = [
                         'username'     => $this->request->getVar('username'),
                         'nama'         => strtoupper($this->request->getVar('nama')),
+                        'level'       => $this->request->getVar('level'),
                         'active'       => $this->request->getVar('active'),
                     ];
     
@@ -186,6 +204,7 @@ class User extends BaseController
                         'username'     => $this->request->getVar('username'),
                         'nama'         => strtoupper($this->request->getVar('nama')),
                         'active'       => $this->request->getVar('active'),
+                        'level'       => $this->request->getVar('level'),
                         'password'     => (password_hash($this->request->getVar('password'), PASSWORD_BCRYPT)),
                     ];
     

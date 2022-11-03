@@ -77,10 +77,25 @@ class Home extends BaseController
 				}
 
 				$layanan = $this->request->getVar('survey_layanan');
+				
+				$data_url = [
+					'url_1' => NULL,
+				];
+
+				$data_pnl = [
+					'pnl_1' => NULL,
+				];
+
+				$this->url->insert($data_url);
+				$last_url = $this->url->insertID();
+				$this->pnl->insert($data_pnl);
+				$last_pnl = $this->pnl->insertID();
 
                 $simpandata = [
                     'survey_ip'             => $ip,
                     'survey_layanan'        => $layanan,
+					'survey_url' 			=> intval($last_url),
+					'survey_pnl' 			=> intval($last_pnl),
                     'survey_status'         => 0,
                     'survey_dt'      		=> $dt,
                 ];
@@ -94,6 +109,8 @@ class Home extends BaseController
 					'ip' 		=> $ip,
 					'layanan' 	=> $layanan,
 					'sid' 		=> $last_survey,
+					'url_id'    => $last_url,
+					'pnl_id'    => $last_pnl,
 				];
 
 				$this->session->set($simpan_session);
@@ -114,6 +131,8 @@ class Home extends BaseController
 		if (session('survey')) {
 			// $ip 			= session()->get('ip');
 			$survey_id 		= session()->get('sid');
+			$url_id 		= session()->get('url_id');
+			$pnl_id 		= session()->get('pnl_id');
 
 			$layanan_id 	= session()->get('layanan');
 			$url 			= "http://sukmasantri.jombangkab.go.id/api";
@@ -131,7 +150,9 @@ class Home extends BaseController
 			'survey_id'		=> $survey_id,
 			'layanan'		=> $layanan,
 			'ikm'			=> $ikm,
-			'id_lembaga'	=> $layanan_id
+			'id_lembaga'	=> $layanan_id,
+			'url_id' 		=> $url_id,
+			'pnl_id' 		=> $pnl_id,
 			];
 
 			return view('survey', $data);
@@ -148,6 +169,8 @@ class Home extends BaseController
 			$id_lembaga 	= $this->request->getVar('id_lembaga');
 			$nama_lembaga  	= $this->request->getVar('nama_lembaga');
 			$ikm  			= $this->request->getVar('ikm');
+			$url_id  		= $this->request->getVar('url_id');
+			$pnl_id  		= $this->request->getVar('pnl_id');
 
 			$p1_1       = intval($this->request->getPost('p1_1'));
 			$p1_2       = intval($this->request->getPost('p1_2'));
@@ -309,6 +332,7 @@ class Home extends BaseController
 			
 
 			$update = [
+				'survey_layanan_nama'=> $nama_lembaga,
 				'survey_status'	   => 1,
 				'p1_1'             => $p1_1,
 				'p1_2'             => $p1_2,
@@ -350,6 +374,7 @@ class Home extends BaseController
 			];
 
 			$this->survey->update($survey_id, $update);
+			$this->url_pnl($url_id, $pnl_id);
 
 			$cek_id_lembaga = $this->ikpp->cek_id_lembaga($id_lembaga);
 			if ($cek_id_lembaga == 0) {
@@ -483,6 +508,167 @@ class Home extends BaseController
 			}
 			
 			return redirect()->to('success');
+	}
+
+	public function url_pnl($url_id, $pnl_id)
+	{
+		$url_1       = $this->request->getPost('url_1');
+		$url_2       = $this->request->getPost('url_2');
+		$url_3       = $this->request->getPost('url_3');
+		$url_4       = $this->request->getPost('url_4');
+		$url_5       = $this->request->getPost('url_5');
+		$url_6       = $this->request->getPost('url_6');
+		$url_7       = $this->request->getPost('url_7');
+		$url_8       = $this->request->getPost('url_8');
+		$url_9       = $this->request->getPost('url_9');
+		$url_10       = $this->request->getPost('url_10');
+		$url_11       = $this->request->getPost('url_11');
+		$url_12       = $this->request->getPost('url_12');
+		$url_13       = $this->request->getPost('url_13');
+		$url_14       = $this->request->getPost('url_14');
+		$url_15       = $this->request->getPost('url_15');
+		$url_16       = $this->request->getPost('url_16');
+		$url_17       = $this->request->getPost('url_17');
+		$url_18       = $this->request->getPost('url_18');
+		$url_19       = $this->request->getPost('url_19');
+		$url_20       = $this->request->getPost('url_20');
+		$url_21       = $this->request->getPost('url_21');
+		$url_22       = $this->request->getPost('url_22');
+		$url_23       = $this->request->getPost('url_23');
+		$url_24       = $this->request->getPost('url_24');
+		$url_25       = $this->request->getPost('url_25');
+		$url_26       = $this->request->getPost('url_26');
+		$url_27       = $this->request->getPost('url_27');
+		$url_28       = $this->request->getPost('url_28');
+		$url_29       = $this->request->getPost('url_29');
+		$url_30       = $this->request->getPost('url_30');
+		$url_31       = $this->request->getPost('url_31');
+		$url_32       = $this->request->getPost('url_32');
+		$url_33       = $this->request->getPost('url_33');
+		$url_34       = $this->request->getPost('url_34');
+		$url_35       = $this->request->getPost('url_35');
+		$url_36       = $this->request->getPost('url_36');
+		$url_37       = $this->request->getPost('url_37');
+
+		$data_url = [
+			'url_1'				=> $url_1,
+			'url_2'				=> $url_2,
+			'url_3'				=> $url_3,
+			'url_4'				=> $url_4,
+			'url_5'				=> $url_5,
+			'url_6'				=> $url_6,
+			'url_7'				=> $url_7,
+			'url_8'				=> $url_8,
+			'url_9'				=> $url_9,
+			'url_10'			=> $url_10,
+			'url_11'			=> $url_11,
+			'url_12'			=> $url_12,
+			'url_13'			=> $url_13,
+			'url_14'			=> $url_14,
+			'url_15'			=> $url_15,
+			'url_16'			=> $url_16,
+			'url_17'			=> $url_17,
+			'url_18'			=> $url_18,
+			'url_19'			=> $url_19,
+			'url_20'			=> $url_20,
+			'url_21'			=> $url_21,
+			'url_22'			=> $url_22,
+			'url_23'			=> $url_23,
+			'url_24'			=> $url_24,
+			'url_25'			=> $url_25,
+			'url_26'			=> $url_26,
+			'url_27'			=> $url_27,
+			'url_28'			=> $url_28,
+			'url_29'			=> $url_29,
+			'url_30'			=> $url_30,
+			'url_31'			=> $url_31,
+			'url_32'			=> $url_32,
+			'url_33'			=> $url_33,
+			'url_34'			=> $url_34,
+			'url_35'			=> $url_35,
+			'url_36'			=> $url_36,
+			'url_37'			=> $url_37,
+		];
+		$this->url->update($url_id, $data_url);
+
+		$pnl_1       = $this->request->getPost('pnl_1');
+		$pnl_2       = $this->request->getPost('pnl_2');
+		$pnl_3       = $this->request->getPost('pnl_3');
+		$pnl_4       = $this->request->getPost('pnl_4');
+		$pnl_5       = $this->request->getPost('pnl_5');
+		$pnl_6       = $this->request->getPost('pnl_6');
+		$pnl_7       = $this->request->getPost('pnl_7');
+		$pnl_8       = $this->request->getPost('pnl_8');
+		$pnl_9       = $this->request->getPost('pnl_9');
+		$pnl_10       = $this->request->getPost('pnl_10');
+		$pnl_11       = $this->request->getPost('pnl_11');
+		$pnl_12       = $this->request->getPost('pnl_12');
+		$pnl_13       = $this->request->getPost('pnl_13');
+		$pnl_14       = $this->request->getPost('pnl_14');
+		$pnl_15       = $this->request->getPost('pnl_15');
+		$pnl_16       = $this->request->getPost('pnl_16');
+		$pnl_17       = $this->request->getPost('pnl_17');
+		$pnl_18       = $this->request->getPost('pnl_18');
+		$pnl_19       = $this->request->getPost('pnl_19');
+		$pnl_20       = $this->request->getPost('pnl_20');
+		$pnl_21       = $this->request->getPost('pnl_21');
+		$pnl_22       = $this->request->getPost('pnl_22');
+		$pnl_23       = $this->request->getPost('pnl_23');
+		$pnl_24       = $this->request->getPost('pnl_24');
+		$pnl_25       = $this->request->getPost('pnl_25');
+		$pnl_26       = $this->request->getPost('pnl_26');
+		$pnl_27       = $this->request->getPost('pnl_27');
+		$pnl_28       = $this->request->getPost('pnl_28');
+		$pnl_29       = $this->request->getPost('pnl_29');
+		$pnl_30       = $this->request->getPost('pnl_30');
+		$pnl_31       = $this->request->getPost('pnl_31');
+		$pnl_32       = $this->request->getPost('pnl_32');
+		$pnl_33       = $this->request->getPost('pnl_33');
+		$pnl_34       = $this->request->getPost('pnl_34');
+		$pnl_35       = $this->request->getPost('pnl_35');
+		$pnl_36       = $this->request->getPost('pnl_36');
+		$pnl_37       = $this->request->getPost('pnl_37');
+
+		$data_pnl = [
+			'pnl_1'				=> $pnl_1,
+			'pnl_2'				=> $pnl_2,
+			'pnl_3'				=> $pnl_3,
+			'pnl_4'				=> $pnl_4,
+			'pnl_5'				=> $pnl_5,
+			'pnl_6'				=> $pnl_6,
+			'pnl_7'				=> $pnl_7,
+			'pnl_8'				=> $pnl_8,
+			'pnl_9'				=> $pnl_9,
+			'pnl_10'			=> $pnl_10,
+			'pnl_11'			=> $pnl_11,
+			'pnl_12'			=> $pnl_12,
+			'pnl_13'			=> $pnl_13,
+			'pnl_14'			=> $pnl_14,
+			'pnl_15'			=> $pnl_15,
+			'pnl_16'			=> $pnl_16,
+			'pnl_17'			=> $pnl_17,
+			'pnl_18'			=> $pnl_18,
+			'pnl_19'			=> $pnl_19,
+			'pnl_20'			=> $pnl_20,
+			'pnl_21'			=> $pnl_21,
+			'pnl_22'			=> $pnl_22,
+			'pnl_23'			=> $pnl_23,
+			'pnl_24'			=> $pnl_24,
+			'pnl_25'			=> $pnl_25,
+			'pnl_26'			=> $pnl_26,
+			'pnl_27'			=> $pnl_27,
+			'pnl_28'			=> $pnl_28,
+			'pnl_29'			=> $pnl_29,
+			'pnl_30'			=> $pnl_30,
+			'pnl_31'			=> $pnl_31,
+			'pnl_32'			=> $pnl_32,
+			'pnl_33'			=> $pnl_33,
+			'pnl_34'			=> $pnl_34,
+			'pnl_35'			=> $pnl_35,
+			'pnl_36'			=> $pnl_36,
+			'pnl_37'			=> $pnl_37,
+		];
+		$this->pnl->update($pnl_id, $data_pnl);
 	}
 
 	public function success()

@@ -7,6 +7,8 @@
 <input type="hidden" name="ikm" id="ikm" value="<?= $ikm?>">
 <input type="hidden" name="nama_lembaga" id="nama_lembaga" value="<?= $layanan?>">
 <input type="hidden" name="id_lembaga" id="id_lembaga" value="<?= $id_lembaga?>">
+<input type="hidden" name="url_id" id="url_id" value="<?= $url_id?>">
+<input type="hidden" name="pnl_id" id="pnl_id" value="<?= $pnl_id?>">
 <?= csrf_field(); ?>
 <div class="container">
     <div class="card">

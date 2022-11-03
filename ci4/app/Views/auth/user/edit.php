@@ -31,6 +31,18 @@
                     <input type="password" class="form-control" id="password" name="password">
                 </div>
 
+                <div class="form-group">
+                    <label>Roles</label>
+                    <select name="level" id="level" class="form-control">
+                        <option Disabled=true Selected=true>Pilih</option>
+                        <option value="1"  <?php if ($level == '1') echo "selected"; ?>>Admin</option>
+                        <option value="2"  <?php if ($level == '2') echo "selected"; ?>>Penilai</option>
+                        <option value="3"  <?php if ($level == '3') echo "selected"; ?>>UPD</option>
+                    </select>
+                    <div class="invalid-feedback errorlevel">
+                    </div>
+                </div>
+
 
                 <div class="form-group">
                     <label>Status Aktif</label>
@@ -66,6 +78,7 @@
                     username: $('input#username').val(),
                     nama: $('input#nama').val(),
                     password: $('input#password').val(),
+                    level: $('select#level').val(),
                     active: $('select#active').val(),
                 },
                 dataType: "json",
@@ -93,6 +106,14 @@
                         } else {
                             $('#nama').removeClass('is-invalid');
                             $('.errorNama').html('');
+                        }
+
+                        if (response.error.level) {
+                            $('#level').addClass('is-invalid');
+                            $('.errorlevel').html(response.error.level);
+                        } else {
+                            $('#level').removeClass('is-invalid');
+                            $('.errorlevel').html('');
                         }
 
                         if (response.error.active) {
