@@ -21,7 +21,20 @@ class Home extends BaseController
 			return redirect()->to('/auth/dashboard');
 		} else {
 			$url 		= "http://sukmasantri.jombangkab.go.id/api";
-			$json 		= file_get_contents($url);
+			// $json 		= file_get_contents($url);
+			$options = array(
+				CURLOPT_RETURNTRANSFER => true,
+				CURLOPT_USERAGENT => 'any-user-agent-you-want',
+			);
+			
+			// Preparing CURL
+			$curl_handle = curl_init($url);
+			
+			// Setting array of options
+			curl_setopt_array( $curl_handle, $options );
+			
+			// Getting the content
+			$json 		= curl_exec($curl_handle);
 			$json_data 	= json_decode($json, true);
 			
 			$data = [
